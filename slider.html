@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+            width: 500px;
+            border: 10px groove aqua;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+    <script>
+        function demo()
+        {
+            var im1 = document.getElementById("img1");
+            var im2 = document.getElementById("img2");
+            var im3 = document.getElementById("img3");
+            var path1 = im1.src;
+            var path2 = im2.src;
+            var path3 = im3.src;
+            im1.src=path2;
+            im2.src=path3;
+            im3.src=path1;
+        }
+        setInterval("demo()",500);
+    </script>
+</head>
+<body>
+    <img src="image/ab5.jpg" id="img1"/>
+    <img src="image/ab7.jpg" id="img2"/>
+    <img src="image/ab8.jpg" id="img3"/>
+</body>
+</html>
